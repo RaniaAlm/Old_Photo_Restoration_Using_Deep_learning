@@ -1,2 +1,2 @@
 # Old Photo Restoration 
-<img src='imgs/Boy.jpg'/>
+<img src='imgs/Boy.png'/>

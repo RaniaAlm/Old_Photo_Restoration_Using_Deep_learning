@@ -1,6 +1,3 @@
-# Copyright (c) Microsoft Corporation.
-# Licensed under the MIT License.
-
 import time
 from collections import OrderedDict
 from options.train_options import TrainOptions

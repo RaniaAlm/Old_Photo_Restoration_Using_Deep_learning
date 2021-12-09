@@ -1,6 +1,3 @@
-# Copyright (c) Microsoft Corporation.
-# Licensed under the MIT License.
-
 import os
 import sys
 import time
@@ -13,7 +10,6 @@ import torch
 import torchvision as tv
 import torch.backends.cudnn as cudnn
 
-# from torch.utils.tensorboard import SummaryWriter
 
 import yaml
 import matplotlib.pyplot as plt

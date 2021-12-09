@@ -19,7 +19,7 @@ A triplet domain translation network is proposed to solve both structured degrad
 
 ### 3) Face Enhancement :
 
-We use a progressive generator to refine the face regions of old photos. More details could be found in our journal submission and `./Face_Enhancement` folder.
+We use a progressive generator to refine the face regions of old photos.
 
 <p align="center">
 <img src='imgs/face_pipeline.jpg' width="60%" height="60%"/>

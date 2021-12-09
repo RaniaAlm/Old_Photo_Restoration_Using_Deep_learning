@@ -14,7 +14,14 @@ A triplet domain translation network is proposed to solve both structured degrad
 <img src='imgs/pipeline.PNG' width="50%" height="50%"/>
 </p>
 
+
 ### 2) Face Detection :
+
+We use a landmark detection model to detect faces.
+
+<p align="center">
+<img src='imgs/Facial_Landmark_Detection.png' width="60%" height="60%"/>
+</p>
 
 
 ### 3) Face Enhancement :
@@ -30,6 +37,8 @@ We use a progressive generator to refine the face regions of old photos.
 
 
 ### 4) Blending All Stages :
+
+In the last stage, we blend all the stages.
 
 
 [Paper (CVPR version)](https://arxiv.org/abs/2004.09484) | [Paper (Journal version)](https://arxiv.org/pdf/2009.07047v1.pdf)

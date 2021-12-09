@@ -1,6 +1,3 @@
-# Copyright (c) Microsoft Corporation.
-# Licensed under the MIT License.
-
 import torch
 import torch.nn.parallel
 import numpy as np
@@ -9,7 +6,7 @@ import torch.nn.functional as F
 
 
 class Downsample(nn.Module):
-    # https://github.com/adobe/antialiased-cnns
+ 
 
     def __init__(self, pad_type="reflect", filt_size=3, stride=2, channels=None, pad_off=0):
         super(Downsample, self).__init__()

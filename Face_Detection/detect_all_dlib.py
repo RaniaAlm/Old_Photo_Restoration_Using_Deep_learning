@@ -1,12 +1,8 @@
-# Copyright (c) Microsoft Corporation.
-# Licensed under the MIT License.
-
 import torch
 import numpy as np
 import skimage.io as io
 
-# from FaceSDK.face_sdk import FaceDetection
-# from face_sdk import FaceDetection
+
 import matplotlib.pyplot as plt
 from matplotlib.patches import Rectangle
 from skimage.transform import SimilarityTransform
@@ -82,14 +78,14 @@ def compute_transformation_matrix(img, landmark, normalize, target_face_scale=1.
     std_pts = _standard_face_pts()  # [-1,1]
     target_pts = (std_pts * target_face_scale + 1) / 2 * 256.0
 
-    # print(target_pts)
+
 
     h, w, c = img.shape
     if normalize == True:
         landmark[:, 0] = landmark[:, 0] / h * 2 - 1.0
         landmark[:, 1] = landmark[:, 1] / w * 2 - 1.0
 
-    # print(landmark)
+    
 
     affine = SimilarityTransform()
 

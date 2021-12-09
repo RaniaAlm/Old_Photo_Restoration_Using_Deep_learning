@@ -1,6 +1,3 @@
-# Copyright (c) Microsoft Corporation.
-# Licensed under the MIT License.
-
 import torch.utils.data
 import random
 from data.base_data_loader import BaseDataLoader

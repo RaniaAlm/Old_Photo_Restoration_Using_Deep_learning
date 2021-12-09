@@ -41,6 +41,8 @@ We use a progressive generator to refine the face regions of old photos.
 In the last stage, we blend all the stages.
 
 
+
+## Papers :
 [Paper (CVPR version)](https://arxiv.org/abs/2004.09484) | [Paper (Journal version)](https://arxiv.org/pdf/2009.07047v1.pdf)
 
 

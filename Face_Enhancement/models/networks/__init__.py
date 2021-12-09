@@ -1,6 +1,3 @@
-# Copyright (c) Microsoft Corporation.
-# Licensed under the MIT License.
-
 import torch
 from models.networks.base_network import BaseNetwork
 from models.networks.generator import *

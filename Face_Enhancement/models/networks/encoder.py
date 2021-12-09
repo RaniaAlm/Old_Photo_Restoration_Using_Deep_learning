@@ -1,6 +1,3 @@
-# Copyright (c) Microsoft Corporation.
-# Licensed under the MIT License.
-
 import torch.nn as nn
 import numpy as np
 import torch.nn.functional as F

@@ -1,6 +1,3 @@
-# Copyright (c) Microsoft Corporation.
-# Licensed under the MIT License.
-
 import re
 import importlib
 import torch
@@ -125,11 +122,7 @@ def atoi(text):
 
 
 def natural_keys(text):
-    """
-    alist.sort(key=natural_keys) sorts in human order
-    http://nedbatchelder.com/blog/200712/human_sorting.html
-    (See Toothy's implementation in the comments)
-    """
+
     return [atoi(c) for c in re.split("(\d+)", text)]
 
 
@@ -182,11 +175,7 @@ def load_network(net, label, epoch, opt):
     return net
 
 
-###############################################################################
-# Code from
-# https://github.com/ycszen/pytorch-seg/blob/master/transform.py
-# Modified so it complies with the Citscape label map colors
-###############################################################################
+
 def uint82bin(n, count=8):
     """returns the binary of integer n, count refers to amount of bits"""
     return "".join([str((n >> y) & 1) for y in range(count - 1, -1, -1)])

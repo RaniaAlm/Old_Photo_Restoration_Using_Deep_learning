@@ -1,11 +1,8 @@
-# Copyright (c) Microsoft Corporation.
-# Licensed under the MIT License.
-
 import torch
 import numpy as np
 import skimage.io as io
 
-# from face_sdk import FaceDetection
+
 import matplotlib.pyplot as plt
 from matplotlib.patches import Rectangle
 from skimage.transform import SimilarityTransform
@@ -129,14 +126,14 @@ def compute_transformation_matrix(img, landmark, normalize, target_face_scale=1.
     std_pts = _standard_face_pts()  # [-1,1]
     target_pts = (std_pts * target_face_scale + 1) / 2 * 256.0
 
-    # print(target_pts)
+
 
     h, w, c = img.shape
     if normalize == True:
         landmark[:, 0] = landmark[:, 0] / h * 2 - 1.0
         landmark[:, 1] = landmark[:, 1] / w * 2 - 1.0
 
-    # print(landmark)
+
 
     affine = SimilarityTransform()
 
@@ -150,14 +147,14 @@ def compute_inverse_transformation_matrix(img, landmark, normalize, target_face_
     std_pts = _standard_face_pts()  # [-1,1]
     target_pts = (std_pts * target_face_scale + 1) / 2 * 256.0
 
-    # print(target_pts)
+
 
     h, w, c = img.shape
     if normalize == True:
         landmark[:, 0] = landmark[:, 0] / h * 2 - 1.0
         landmark[:, 1] = landmark[:, 1] / w * 2 - 1.0
 
-    # print(landmark)
+
 
     affine = SimilarityTransform()
 
@@ -183,7 +180,7 @@ def show_detection(image, box, landmark):
 
 
 def affine2theta(affine, input_w, input_h, target_w, target_h):
-    # param = np.linalg.inv(affine)
+
     param = affine
     theta = np.zeros([2, 3])
     theta[0, 0] = param[0, 0] * input_h / target_h
@@ -231,14 +228,9 @@ def blur_blending_cv2(im1, im2, mask):
 
     return im
 
-
-# def Poisson_blending(im1,im2,mask):
-
-
-#     Image.composite(
 def Poisson_blending(im1, im2, mask):
 
-    # mask=1-mask
+
     mask *= 255
     kernel = np.ones((10, 10), np.uint8)
     mask = cv2.erode(mask, kernel, iterations=1)

@@ -1,12 +1,8 @@
-# Copyright (c) Microsoft Corporation.
-# Licensed under the MIT License.
-
 import numpy as np
 import os
 import ntpath
 import time
 from . import util
-#from . import html
 import scipy.misc
 try:
     from StringIO import StringIO  # Python 2.7

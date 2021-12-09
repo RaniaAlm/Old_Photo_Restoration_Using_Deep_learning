@@ -42,7 +42,7 @@ In the last stage, we blend all the stages.
 
 
 
-## Papers :
+## Paper :
 [Paper (Journal version)](https://arxiv.org/pdf/2009.07047v1.pdf)
 
 

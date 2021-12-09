@@ -1,6 +1,3 @@
-# Copyright (c) Microsoft Corporation.
-# Licensed under the MIT License.
-
 import os
 import torch
 import sys
@@ -72,8 +69,7 @@ class BaseModel(torch.nn.Module):
         if not save_dir:
             save_dir = self.save_dir
 
-        # print(save_dir)
-        # print(self.save_dir)
+       
         save_path = os.path.join(save_dir, save_filename)
         if not os.path.isfile(save_path):
             print("%s not exists yet!" % save_path)
